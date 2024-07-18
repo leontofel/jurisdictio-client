@@ -1,10 +1,13 @@
-import Button from "@components/global/Button"
+import { CallToAction } from "@components/global/CallToAction";
+import { Features } from "@components/global/Features";
+import { Hero } from "@components/global/Hero";
 
 export const Home = () => {
     return (
-        <div>
-            <h1 className="text-3xl flex justify-center items-center">Home</h1>
-            <Button variant="primary">Button</Button>
-        </div>
-    )
+      <div>
+        <Hero />
+        <Features />
+        <CallToAction />
+      </div>
+    );
 }

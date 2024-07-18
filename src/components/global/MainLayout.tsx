@@ -11,7 +11,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex " style={{ minHeight: 'calc(100vh - 120px)' }}>
+      <div className="flex " style={{ minHeight: '100%' }}>
         <Sidebar />
         <main className="flex-grow p-4">{children}</main>
       </div>

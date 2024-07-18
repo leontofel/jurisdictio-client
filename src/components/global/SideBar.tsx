@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar: React.FC = () => {
   return (
-    <aside className="hidden lg:block lg:w-64 bg-gray-800 text-white p-4" style={{ height: 'calc(100vh - 120px)' }}>
+    <aside className="hidden lg:block lg:w-64 bg-gray-800 text-white p-4" style={{ minHeight: '100%' }}>
       <h2 className="text-xl font-bold mb-4">Sidebar</h2>
       <nav>
         <ul>

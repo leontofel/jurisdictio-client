@@ -14,3 +14,7 @@ export const login: AsyncThunk<LoginResponse, LoginPayload, object> = createAsyn
     return rejectWithValue('Failed to login');
   }
 });
+
+export function register(name: string, email: string, password: string) {
+  return unloggedAxios.post('/register', { name, email, password });
+}

@@ -1,5 +1,6 @@
 export interface AuthState {
   token: string | null;
+  user: User | null;
   loading: boolean;
   error: string | null;
 }
@@ -9,6 +10,13 @@ export interface LoginPayload {
   password: string;
 }
 
+export interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
 export interface LoginResponse {
   token: string;
+  user: User;
 }

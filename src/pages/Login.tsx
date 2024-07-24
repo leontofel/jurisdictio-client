@@ -26,7 +26,7 @@ export const Login = () => {
   const onSubmit = (data: LoginFormInputs) => {
     dispatch(login(data)).then((action) => {
       if (login.fulfilled.match(action)) {
-        navigate('/'); // Redireciona para a página inicial após o login bem-sucedido
+        navigate('/dashboard');
       }
     });
   };

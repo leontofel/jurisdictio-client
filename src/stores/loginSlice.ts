@@ -4,6 +4,7 @@ import { login } from "@services/api";
 
 const initialState: AuthState = {
   token: null,
+  user: null,
   loading: false,
   error: null,
 };
@@ -26,6 +27,7 @@ const authSlice = createSlice({
       (state, action: PayloadAction<LoginResponse>) => {
         state.loading = false;
         state.token = action.payload.token;
+        state.user = action.payload.user;
         localStorage.setItem('token', action.payload.token);
       },
     );
